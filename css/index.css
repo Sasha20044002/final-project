@@ -188,6 +188,7 @@
   width: 11px;
   height: 11px;
   margin: 0 10px 0 0;
+  opacity: .5;
 }
 
 .header-input__radio #rad:checked {
