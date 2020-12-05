@@ -1,0 +1,20 @@
+//size
+$w: 1920px;
+//color
+$c1: #000;
+$c2: #fff;
+//fonts
+$M: 'Montserrat';
+$R: 'Raleway';
+
+//import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+//mixin
+@mixin txt ($color, $line-height, $font-size, $font-weight, $font-family) {
+    color: $color;
+    line-height: $line-height;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family, sans-serif;
+}
