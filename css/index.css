@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&family=Raleway:wght@400;500;600;700;800&display=swap");
 .header {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url(../img/back_header.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
 }
 
@@ -44,6 +45,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+}
+
+.header-header__logo:hover > .header-header__logo-img,
+.header-header__logo:hover > .header-header__logo-text {
+  fill: #000;
+  color: #000;
+}
+
+.header-header__logo-img {
+  display: block;
+  fill: #fff;
 }
 
 .header-header__logo-text {
@@ -55,8 +68,8 @@
 }
 
 .header-header__nav {
-  width: 640px;
-  margin: 0 3.28125% 0 11.40625%;
+  margin: 0 1.9% 0 5%;
+  width: 600px;
 }
 
 .header-header__nav-list {
@@ -65,9 +78,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.header-header__nav-list-item {
+  margin: 0 3.5% 0 0;
 }
 
 .header-header__nav-list-item-link {
@@ -84,22 +98,34 @@
 }
 
 .header-header__bin {
+  display: block;
   margin: 0 28px 0 0;
+  background-color: transparent;
+  border: none;
 }
 
-.header-header label[for="serch"] {
+.header-header__bin svg {
+  fill: #fff;
+}
+
+.header-header__bin svg:hover {
+  fill: #000;
+}
+
+.header-header .form-serch:hover > .header-header .form-serch__label {
+  fill: #000;
+}
+
+.header-header .form-serch__label {
   margin: 0 15px 0 0;
 }
 
-.header-header input[type="search"] {
-  background-color: transparent;
-  border: none;
-  border-bottom: 0.25px solid #fff;
-  color: #fff;
+.header-header .form-serch__label svg {
+  fill: #fff;
 }
 
-.header-header input[type="search"]:focus {
-  outline: none;
+.header-header .form-serch__label svg:hover {
+  fill: #000;
 }
 
 .header-main {
@@ -182,6 +208,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-input__radio a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header-input__radio #rad {

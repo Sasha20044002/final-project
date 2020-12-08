@@ -21,10 +21,11 @@ $R: 'Raleway';
 
 .header {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(../img/back_header.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     position: relative;
 
     &__arrow-left {
@@ -52,6 +53,18 @@ $R: 'Raleway';
         &__logo {
             display: flex;
             align-items: center;
+            text-decoration: none;
+
+            &:hover>&-img,
+            &:hover>&-text {
+                fill: #000;
+                color: #000;
+            }
+
+            &-img {
+                display: block;
+                fill: #fff;
+            }
 
             &-text {
                 @include txt(#fff, 1.2, 34px, 400, $R);
@@ -59,16 +72,17 @@ $R: 'Raleway';
         }
 
         &__nav {
-            width: 640px;
-            margin: 0 3.28125% 0 11.40625%;
+            margin: 0 1.9% 0 5%;
+            width: 600px;
 
             &-list {
                 padding: 0;
                 list-style-type: none;
                 display: flex;
-                justify-content: space-between;
 
                 &-item {
+                    margin: 0 3.5% 0 0;
+
                     &-link {
                         @include txt(#fff, 1.2, 14px, 300, $M);
                         text-decoration: none;
@@ -82,21 +96,36 @@ $R: 'Raleway';
         }
 
         &__bin {
+            display: block;
             margin: 0 28px 0 0;
-        }
-
-        label[for="serch"] {
-            margin: 0 15px 0 0;
-        }
-
-        input[type="search"] {
             background-color: transparent;
             border: none;
-            border-bottom: 0.25px solid #fff;
-            color: #fff;
 
-            &:focus {
-                outline: none;
+            svg {
+                fill: #fff;
+
+                &:hover {
+                    fill: #000;
+                }
+            }
+        }
+
+        .form-serch {
+            &:hover>&__label{
+                fill: #000;
+            }
+
+
+            &__label {
+                margin: 0 15px 0 0;
+
+                svg {
+                    fill: #fff;
+
+                    &:hover {
+                        fill: #000;
+                    }
+                }
             }
         }
     }
@@ -151,6 +180,10 @@ $R: 'Raleway';
         bottom: 40px;
         display: flex;
         align-items: center;
+
+        a {
+            display: flex;
+        }
 
         #rad {
             width: 11px;
