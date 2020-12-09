@@ -210,24 +210,46 @@
           align-items: center;
 }
 
-.header-input__radio a {
+.header-input__radio label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header-input__radio #rad {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 11px;
   height: 11px;
   margin: 0 10px 0 0;
   opacity: .5;
 }
 
-.header-input__radio #rad:checked {
-  width: 15px;
-  height: 15px;
+.header-input__radio label::before {
+  content: url(../img/circle_picked.png);
 }
 
-.header-input__radio .none {
-  margin: 0;
+.header-input__radio .switcher {
+  display: none;
+}
+
+.header-input__radio #rad1:checked ~ label[for="rad1"],
+.header-input__radio #rad2:checked ~ label[for="rad2"],
+.header-input__radio #rad3:checked ~ label[for="rad3"],
+.header-input__radio #rad4:checked ~ label[for="rad4"],
+.header-input__radio #rad5:checked ~ label[for="rad5"] {
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-input__radio #rad1:checked ~ label[for="rad1"]::before,
+.header-input__radio #rad2:checked ~ label[for="rad2"]::before,
+.header-input__radio #rad3:checked ~ label[for="rad3"]::before,
+.header-input__radio #rad4:checked ~ label[for="rad4"]::before,
+.header-input__radio #rad5:checked ~ label[for="rad5"]::before {
+  content: url(../img/circle_no_picked.png);
 }

@@ -111,7 +111,7 @@ $R: 'Raleway';
         }
 
         .form-serch {
-            &:hover>&__label{
+            &:hover>&__label {
                 fill: #000;
             }
 
@@ -181,24 +181,37 @@ $R: 'Raleway';
         display: flex;
         align-items: center;
 
-        a {
+        label {
             display: flex;
-        }
-
-        #rad {
+            align-items: center;
             width: 11px;
             height: 11px;
             margin: 0 10px 0 0;
             opacity: .5;
 
-            &:checked {
-                width: 15px;
-                height: 15px;
+            &::before {
+                content: url(../img/circle_picked.png);
             }
         }
 
-        .none {
-            margin: 0;
+        .switcher {
+            display: none;
         }
+
+        #rad1:checked~label[for="rad1"],
+        #rad2:checked~label[for="rad2"],
+        #rad3:checked~label[for="rad3"],
+        #rad4:checked~label[for="rad4"],
+        #rad5:checked~label[for="rad5"] {
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: url(../img/circle_no_picked.png)
+            }
+        }
+
     }
 }
