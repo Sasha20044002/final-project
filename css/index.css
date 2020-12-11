@@ -407,21 +407,21 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  z-index: -1;
+  z-index: 3;
 }
 
 .main .photos-img-2 {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: -2;
+  z-index: 2;
 }
 
 .main .photos-img-3 {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: -2;
+  z-index: 1;
 }
 
 .main .advert {
@@ -468,4 +468,239 @@
   background-color: #998675;
   border-radius: 3px;
   padding: 19px 29px 20px 28px;
+}
+
+.main .project {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .project-title {
+  color: #555;
+  line-height: 1.2;
+  font-size: 30px;
+  font-family: R600, sans-serif;
+  margin: 0 0 24px 0;
+  text-transform: capitalize;
+}
+
+.main .project-text {
+  color: #8c8c8c;
+  line-height: 28px;
+  font-size: 16px;
+  font-family: M300, sans-serif;
+  width: 758px;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.main .project-btn {
+  margin: 0 0 51px 0;
+}
+
+.main .project-btn a {
+  color: #8c8c8c;
+  line-height: 21px;
+  font-size: 14px;
+  font-family: M300, sans-serif;
+  text-decoration: none;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 19px 8px 18px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+
+.main .project-btn a:hover {
+  text-decoration: underline;
+}
+
+.main .project-btn a:active {
+  color: #fff;
+  background-color: #998675;
+}
+
+.main .project-btn .active {
+  color: #fff;
+  background-color: #998675;
+}
+
+.main .project-blocks {
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .project-blocks .block {
+  width: 370px;
+  margin: 0 30px 30px 0;
+}
+
+.main .project-blocks .block div {
+  width: 370px;
+  height: 237px;
+  position: relative;
+}
+
+.main .project-blocks .block div svg {
+  display: none;
+}
+
+.main .project-blocks .block .img4 {
+  background: url(../img/img4.png);
+}
+
+.main .project-blocks .block .img5 {
+  background: url(../img/img5.png);
+}
+
+.main .project-blocks .block .img6 {
+  background: url(../img/img6.png);
+}
+
+.main .project-blocks .block .img7 {
+  background: url(../img/img7.png);
+}
+
+.main .project-blocks .block .img8 {
+  background: url(../img/img8.png);
+}
+
+.main .project-blocks .block .img9 {
+  background: url(../img/img9.png);
+}
+
+.main .project-blocks .block .text {
+  background-color: #fbfaf8;
+  width: 230px;
+  color: #c7b299;
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: R500, sans-serif;
+  padding: 30px 113px 27px 28px;
+  margin: 0;
+  position: relative;
+}
+
+.main .project-blocks .block .text .color {
+  color: #d1d1d1;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: M300, sans-serif;
+}
+
+.main .project-blocks .block .text::before {
+  content: '';
+  display: block;
+  border: 30px solid transparent;
+  border-bottom: 10px solid #fbfaf8;
+  position: absolute;
+  left: 19px;
+  bottom: 105px;
+}
+
+.main .project-blocks .right {
+  margin-right: 0;
+}
+
+.main .project-blocks .down {
+  margin-bottom: 0;
+}
+
+.main .project-blocks .block:hover > div .loopa {
+  display: block;
+  position: absolute;
+  top: 106px;
+  left: 198px;
+  fill: #fff;
+}
+
+.main .project-blocks .block:hover > div .loopa:hover {
+  fill: #c7b299;
+}
+
+.main .project-blocks .block:hover > div .ssylka {
+  display: block;
+  position: absolute;
+  top: 106px;
+  left: 144px;
+  fill: #fff;
+}
+
+.main .project-blocks .block:hover > div .ssylka:hover {
+  fill: #c7b299;
+}
+
+.main .project-blocks .block:hover .img4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7))), url(../img/img4.png);
+  background: linear-gradient(rgba(17, 17, 17, 0.7)), url(../img/img4.png);
+}
+
+.main .project-blocks .block:hover .img5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7))), url(../img/img5.png);
+  background: linear-gradient(rgba(17, 17, 17, 0.7)), url(../img/img5.png);
+}
+
+.main .project-blocks .block:hover .img6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7))), url(../img/img6.png);
+  background: linear-gradient(rgba(17, 17, 17, 0.7)), url(../img/img6.png);
+}
+
+.main .project-blocks .block:hover .img7 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7))), url(../img/img7.png);
+  background: linear-gradient(rgba(17, 17, 17, 0.7)), url(../img/img7.png);
+}
+
+.main .project-blocks .block:hover .img8 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7))), url(../img/img8.png);
+  background: linear-gradient(rgba(17, 17, 17, 0.7)), url(../img/img8.png);
+}
+
+.main .project-blocks .block:hover .img9 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7))), url(../img/img9.png);
+  background: linear-gradient(rgba(17, 17, 17, 0.7)), url(../img/img9.png);
+}
+
+.main .project-blocks .block:hover > .text {
+  background-color: #362f2d;
+  color: #fff;
+}
+
+.main .project-blocks .block:hover > .text .color {
+  color: #c7b299;
+}
+
+.main .project-blocks .block:hover > .text::before {
+  border-bottom: 10px solid #362f2d;
+}
+
+.main .project-button {
+  display: block;
+  margin: 30px 0 0 0;
+  width: 81px;
+  color: #fff;
+  line-height: 23px;
+  font-size: 14px;
+  font-family: R800, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 19px 45px 20px 44px;
+  background-color: #998675;
+  border-radius: 3px;
 }
