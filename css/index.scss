@@ -3,19 +3,15 @@ $w: 100%;
 //color
 $c1: #c7b299;
 $c2: #998675;
-//fonts
-$M: 'Montserrat';
-$R: 'Raleway';
 
 //import
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import 'fonts.scss';
 
 //mixin
-@mixin txt ($color, $line-height, $font-size, $font-weight, $font-family) {
+@mixin txt ($color, $line-height, $font-size, $font-family) {
     color: $color;
     line-height: $line-height;
     font-size: $font-size;
-    font-weight: $font-weight;
     font-family: $font-family, sans-serif;
 }
 
@@ -67,7 +63,7 @@ $R: 'Raleway';
             }
 
             &-text {
-                @include txt(#fff, 1.2, 34px, 400, $R);
+                @include txt(#fff, 1.2, 34px, R400);
             }
         }
 
@@ -84,7 +80,7 @@ $R: 'Raleway';
                     margin: 0 3.5% 0 0;
 
                     &-link {
-                        @include txt(#fff, 1.2, 14px, 300, $M);
+                        @include txt(#fff, 1.2, 14px, M300);
                         text-decoration: none;
 
                         &:hover {
@@ -145,24 +141,24 @@ $R: 'Raleway';
             align-items: center;
 
             &-2 {
-                @include txt(#fff, 1.2, 36px, 500, $R);
+                @include txt(#fff, 1.2, 36px, R500);
                 margin: 0 0 14px 0;
             }
 
             &-1 {
-                @include txt(#fff, 1.2, 52px, 800, $R);
+                @include txt(#fff, 1.2, 52px, R800);
                 margin: 0 0 19px 0;
             }
 
             &-p {
                 width: 557px;
-                @include txt(#fff, 24px, 16px, 300, $M);
+                @include txt(#fff, 24px, 16px, M300);
                 margin: 0 0 52px 0;
             }
 
             &-btn {
                 display: block;
-                @include txt(#fff, 23px, 14px, 800, $R);
+                @include txt(#fff, 23px, 14px, R800);
                 text-transform: uppercase;
                 padding: 21px 39px 21px 37px;
                 box-sizing: border-box;
@@ -213,5 +209,63 @@ $R: 'Raleway';
             }
         }
 
+    }
+}
+
+.main{
+    .list{
+        display: flex;
+        justify-content: center;
+        padding: 80px 0;
+
+        &-block{
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-logo{
+                margin: 0 0 29px 0;
+                fill: #555;
+            }
+
+            &-title{
+                width: 100%;
+                @include txt(#555, 1.2, 22px, R600);
+                text-align: center;
+                margin: 0 0 19px 0;
+            }
+
+            &-text{
+                @include txt(#8c8c8c, 24px, 14px, M300);
+                width: 100%;
+                text-align: center;
+                &::after{
+                    content: '';
+                    display: block;
+                    margin: 30px auto 0;
+                    width: 70px;
+                    height: 3px;
+                    background-color: #f1eee9;
+                }
+            }
+
+            &:hover .list-block-logo{
+                fill: #c7b299;
+            }
+
+            &:hover .list-block-title{
+                color: #c7b299;
+            }
+
+            &:hover .list-block-text::after{
+                background-color: #c7b299;
+            }
+        }
+
+        &-block:not(:last-child){
+            margin: 0 33px 0 0;
+        }
     }
 }
