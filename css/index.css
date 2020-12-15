@@ -1098,3 +1098,28 @@
 .main .posts-arrows-right {
   fill: #c7b299;
 }
+
+.main .sponsors {
+  width: 100%;
+  min-height: 489px;
+  background: url(../img/back_sponsors.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .sponsors .logo {
+  margin: 0 90px 0 0;
+}
+
+.main .sponsors .logo:last-child {
+  margin: 0;
+}

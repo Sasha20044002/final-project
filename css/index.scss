@@ -833,4 +833,22 @@ $c2: #998675;
             }
         }
     }
+
+    .sponsors{
+        width: $w;
+        min-height: 489px;
+        background: url(../img/back_sponsors.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            margin: 0 90px 0 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
 }
