@@ -1033,4 +1033,44 @@ $c2: #998675;
             }
         }
     }
+
+    .end{
+        min-height: 111px;
+        background-color: #111111;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .line{
+            color: #252525;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        &-left{
+            @include txt(#555, 20px, 13px, M300);
+
+            .link-1{
+                color: #959595;
+            }
+
+            .link-2{
+                color: #555;
+            }
+
+            .link-3{
+                color: #c7b299;
+            }
+        }
+
+        &-right{
+            @include txt(#555, 20px, 13px, M300);
+
+            .link{
+                color: #959595;
+            }
+        }
+    }
 }

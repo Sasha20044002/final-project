@@ -1362,3 +1362,55 @@
 .footer .info-list .widget-item-photos img:nth-child(1n) {
   margin: 0 0 10px 0;
 }
+
+.footer .end {
+  min-height: 111px;
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .end .line {
+  color: #252525;
+}
+
+.footer .end a {
+  text-decoration: none;
+}
+
+.footer .end-left {
+  color: #555;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: M300, sans-serif;
+}
+
+.footer .end-left .link-1 {
+  color: #959595;
+}
+
+.footer .end-left .link-2 {
+  color: #555;
+}
+
+.footer .end-left .link-3 {
+  color: #c7b299;
+}
+
+.footer .end-right {
+  color: #555;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: M300, sans-serif;
+}
+
+.footer .end-right .link {
+  color: #959595;
+}
