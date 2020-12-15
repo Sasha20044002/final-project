@@ -235,6 +235,20 @@
   text-decoration: none;
 }
 
+.header-main__title-btn:hover {
+  background-color: #ffffff;
+  color: #998675;
+  padding: 20px 38px 20px 36px;
+  border: 1px solid #998675;
+}
+
+.header-main__title-btn:active {
+  padding: 21px 39px 21px 37px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #998675;
+}
+
 .header-input__radio {
   position: absolute;
   margin-left: -3%;
@@ -475,6 +489,13 @@
   padding: 19px 29px 20px 28px;
 }
 
+.main .advert-btn:hover {
+  background-color: #ffffff;
+  color: #998675;
+  padding: 18px 28px 19px 27px;
+  border: 1px solid #998675;
+}
+
 .main .project {
   padding: 80px 0;
   display: -webkit-box;
@@ -708,6 +729,13 @@
   padding: 19px 45px 20px 44px;
   background-color: #998675;
   border-radius: 3px;
+}
+
+.main .project-button:hover {
+  background-color: #ffffff;
+  color: #998675;
+  padding: 18px 44px 19px 43px;
+  border: 1px solid #998675;
 }
 
 .main .video {
@@ -1383,6 +1411,10 @@
 
 .footer .end a {
   text-decoration: none;
+}
+
+.footer .end a:hover {
+  text-decoration: underline;
 }
 
 .footer .end-left {
