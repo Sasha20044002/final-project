@@ -894,3 +894,207 @@
 .main .statistic-block:last-child {
   margin: 0;
 }
+
+.main .posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+}
+
+.main .posts-title {
+  color: #555;
+  line-height: 1.2;
+  font-size: 30px;
+  font-family: R600, sans-serif;
+  margin: 0 0 30px 0;
+}
+
+.main .posts-text {
+  width: 756px;
+  color: #8c8c8c;
+  line-height: 28px;
+  font-size: 16px;
+  font-family: M300, sans-serif;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.main .posts-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 40px 0;
+}
+
+.main .posts-blocks-block {
+  width: 370px;
+  border: 1px solid #f8f8f8;
+  position: relative;
+}
+
+.main .posts-blocks-block .calendar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.main .posts-blocks-block .calendar .day {
+  display: block;
+  width: 30px;
+  color: #fff;
+  line-height: 20px;
+  font-size: 24px;
+  font-family: M300, sans-serif;
+  background-color: #363636;
+  padding: 9px 10px 9px 11px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.main .posts-blocks-block .calendar .month {
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: R400, sans-serif;
+  padding: 7px 13px 6px 14px;
+  background-color: #252525;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.main .posts-blocks-block .selects {
+  margin-left: -49.5px;
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .posts-blocks-block .selects-link {
+  margin: 0 10px 0 0;
+}
+
+.main .posts-blocks-block .selects-link::before {
+  content: url(../img/circle_picked.png);
+  opacity: .3;
+}
+
+.main .posts-blocks-block .selects-link:last-child {
+  margin: 0;
+}
+
+.main .posts-blocks-block .selects .active::before {
+  content: url(../img/circle_no_picked.png);
+  opacity: .3;
+}
+
+.main .posts-blocks-block .img10 {
+  margin: 0;
+}
+
+.main .posts-blocks-block-text {
+  margin: -5px 0 0 0;
+  width: 300px;
+  padding: 30px 41px 33px 29px;
+}
+
+.main .posts-blocks-block-text .title {
+  color: #555;
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: R500, sans-serif;
+  display: block;
+  margin: 0 0 19px 0;
+}
+
+.main .posts-blocks-block-text .text {
+  color: #8c8c8c;
+  line-height: 22px;
+  font-size: 14px;
+  font-family: M300, sans-serif;
+  display: block;
+  margin: 0 0 27px 0;
+}
+
+.main .posts-blocks-block-text .link {
+  color: #c7b299;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: M300, sans-serif;
+  text-decoration: none;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .posts-blocks-block-text .link::after {
+  content: '';
+  border: 5px solid transparent;
+  border-left: 8px solid #c7b299;
+  margin: 0 0 0 9px;
+}
+
+.main .posts-blocks-block:hover > .img10 {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.main .posts-blocks-block:hover > .calendar > .day {
+  background-color: #c7b299;
+}
+
+.main .posts-blocks-block:hover > .calendar > .month {
+  background-color: #a48d72;
+}
+
+.main .posts-blocks-block:hover > .posts-blocks-block-text {
+  background-color: #362f2d;
+}
+
+.main .posts-blocks-block:hover > .posts-blocks-block-text > .title {
+  color: #c7b299;
+}
+
+.main .posts-blocks-block:hover > .posts-blocks-block-text > .text {
+  color: #fff;
+}
+
+.main .posts-blocks-block:nth-child(2) {
+  margin: 0 30px;
+}
+
+.main .posts-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .posts-arrows-left {
+  fill: #d1d1d1;
+  margin: 0 8px 0 0;
+}
+
+.main .posts-arrows-right {
+  fill: #c7b299;
+}
