@@ -34,6 +34,11 @@
 }
 
 @font-face {
+  font-family: M200;
+  src: url(../fonts/Montserrat-ExtraLight.woff2);
+}
+
+@font-face {
   font-family: M100;
   src: url(../fonts/Montserrat-Thin.woff2);
 }
@@ -832,4 +837,60 @@
 .main .device-content-list-item::before {
   content: url(../img/arrow.png);
   margin: 0 29px 0 0;
+}
+
+.main .statistic {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+}
+
+.main .statistic-block {
+  min-width: 77px;
+  max-width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 73px 0 0;
+}
+
+.main .statistic-block-logo {
+  fill: #c7b299;
+  margin: 0 0 30px 0;
+}
+
+.main .statistic-block-number {
+  color: #fff;
+  line-height: 36px;
+  font-size: 48px;
+  font-family: M200, sans-serif;
+  margin: 0 0 21px 0;
+}
+
+.main .statistic-block-text {
+  color: #c7b299;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: M300, sans-serif;
+  text-transform: uppercase;
+}
+
+.main .statistic-block:last-child {
+  margin: 0;
 }
