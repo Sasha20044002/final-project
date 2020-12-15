@@ -551,7 +551,7 @@ $c2: #998675;
     }
 
     .video {
-        margin: 0 auto;
+        margin: 0 auto 79px;
         overflow: hidden;
         width: $w;
         min-height: 100vh;
@@ -601,6 +601,42 @@ $c2: #998675;
 
             &-time {
                 @include txt(#c7b299, 24px, 14px, M400);
+            }
+        }
+    }
+
+    .device{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img{
+            margin: 0 29px 0 0;
+        }
+
+        &-content{
+            width: 660px;
+            &-title{
+                @include txt(#555, 1.2, 30px, R600);
+                margin: 0 0 40px 0;
+            }
+
+            &-text{
+                @include txt(#8c8c8c, 28px, 16px, M300);
+                margin: 0 0 40px 0;
+            }
+
+            &-list{
+                list-style-type: none;
+
+                &-item{
+                    @include txt(#8c8c8c, 32px, 16px, M300);
+                    display: flex;
+                    align-items: center;
+                    &::before{
+                        content: url(../img/arrow.png);
+                        margin: 0 29px 0 0;
+                    }
+                }
             }
         }
     }
