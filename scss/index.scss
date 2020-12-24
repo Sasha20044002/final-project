@@ -183,49 +183,31 @@ $c2: #998675;
     }
 
     &-input__radio {
+        $n: 5;
+        $m: $n * 4;
+        $wi: 55 + $m;
+        display: block;
+        width: $wi;
         position: absolute;
-        margin-left: -3%;
+        margin-left: -($wi / 2);
         left: 50%;
         bottom: 40px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
-        label {
-            display: flex;
-            align-items: center;
+        .select{
+            display: block;
             width: 11px;
             height: 11px;
-            margin: 0 10px 0 0;
-            opacity: .5;
-
-            &::before {
-                content: url(../img/circle_picked.png);
-            }
-        }
-
-        .switcher {
-            display: none;
-        }
-
-        #rad1:checked~label[for="rad1"],
-        #rad2:checked~label[for="rad2"],
-        #rad3:checked~label[for="rad3"],
-        #rad4:checked~label[for="rad4"],
-        #rad5:checked~label[for="rad5"] {
-            width: 15px;
-            height: 15px;
-            display: flex;
-            align-items: center;
-
-            &::before {
-                content: url(../img/circle_no_picked.png)
-            }
+            background: url(../img/circle_picked.png) no-repeat cover;
         }
 
     }
 }
 
 .main {
+
     .list {
         display: flex;
         justify-content: center;
@@ -1103,5 +1085,11 @@ $c2: #998675;
                 color: #959595;
             }
         }
+    }
+}
+
+@media (max-width: 577px){
+    section.photos{
+        display: none;
     }
 }
