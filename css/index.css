@@ -1458,16 +1458,16 @@ body {
   .main>.device {
     flex-direction: column;
   }
-  
-  .main > .device-title{
+
+  .main>.device-title {
     order: 1;
   }
-  
-  .main > .device-img{
+
+  .main>.device-img {
     order: 2;
   }
-  
-  .main > .device-content-list{
+
+  .main>.device-content-list {
     order: 3;
   }
 
