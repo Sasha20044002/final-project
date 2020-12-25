@@ -1425,6 +1425,94 @@ body {
     width: 576px;
   }
 
+  .header .header-header{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .header .header-header .header-header__logo .header-header__logo-text{
+    display: none;
+  }
+
+  .header .header-header #open{
+    display: none;
+  }
+
+  .header .header-header .header-header__nav{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -9999999%;
+  }
+
+  #open:checked ~ .header-header__nav{
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .close{
+    font-weight: bold;
+    font-size: 36px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+  }
+
+  .header-header__nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .header-header__nav-list-item{
+    margin: 0;
+  }
+
+  .header-header__nav-list-item-link{
+    color: black;
+  }
+
+  .open{
+    font-weight: bold;
+    color: white;
+    font-size: 36px;
+  }
+
+  .header-header__bin{
+    display: none;
+  }
+
+  .form-serch{
+    display: none;
+  }
+
+  .header-main__title-2{
+    display: none;
+  }
+
+  .header-main__title-1{
+    text-align: center;
+  }
+
+  .header-main__title-p{
+    text-align: center;
+  }
+
+  .header-main__title-btn{
+    display: none;
+  }
+
+  .header__arrow-right, .header__arrow-left{
+    display: none;
+  }
+
   .main>.photos {
     display: none;
   }
@@ -1451,6 +1539,10 @@ body {
     flex-direction: column;
   }
 
+  .main .project-text{
+    width: 500px;
+  }
+
   .main>.video {
     display: none;
   }
@@ -1465,6 +1557,11 @@ body {
 
   .main>.device-img {
     order: 2;
+    margin-bottom: 15px;
+  }
+  
+  .main .device-content{
+    width: 550px;
   }
 
   .main>.device-content-list {
@@ -1473,6 +1570,10 @@ body {
 
   .main>.statistic {
     display: none;
+  }
+
+  .main .posts-text{
+    width: 500px;
   }
 
   .main .posts-blocks {
@@ -1491,7 +1592,20 @@ body {
     margin: 0;
   }
 
+  .main .sponsors{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .main .sponsors .logo{
+    margin: 0;
+  }
+
   .footer .info {
     display: none;
+  }
+
+  .footer .end{
+    flex-direction: column;
   }
 }
